@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,6 +30,11 @@ namespace MoviesApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                var options = new WebpackDevMiddlewareOptions()
+                {
+                    HotModuleReplacement = true
+                };
+                app.UseWebpackDevMiddleware(options);
             }
 
             app.UseStaticFiles();

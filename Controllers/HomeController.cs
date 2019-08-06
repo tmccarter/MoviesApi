@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MoviesApi.Controllers
 {
-    [Route("/home")]
+    [Route("/")]
     public class HomeController : Controller
     {
         public IActionResult Index()
