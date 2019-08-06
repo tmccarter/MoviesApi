@@ -1,0 +1,30 @@
+{
+  "name": "MoviesApi",
+  "version": "0.1.0",
+  "description": "A full-stack .NET Core Web API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wbp": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmccarter/MoviesApi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tmccarter/MoviesApi/issues"
+  },
+  "homepage": "https://github.com/tmccarter/MoviesApi#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.0-beta.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "webpack": "^3.8.1"
+  }
+}
